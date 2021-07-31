@@ -7,7 +7,7 @@ from flask import Flask, render_template
 app = Flask(__name__)
 app.config['SERVER_NAME'] = 'localhost:5000'
 app.permanent_session_lifetime = timedelta(seconds=1)
-TIME_LIMIT = 3.0001
+TIME_LIMIT = 0.0001
 
 
 async def async_get_data(all_result):
