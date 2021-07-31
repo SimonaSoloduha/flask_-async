@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>тут будет начальная страница </title>
-</head>
-<body>
-
-</body>
-</html>
+{% block content %}
+{% for item in items %}
+        <h4>{{ item }}</h4>
+    <hr>
+{% endfor %}
+{% endblock %}
